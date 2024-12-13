@@ -1,0 +1,123 @@
+/*Aqui está o CSS com as normas ABNT ajustadas, incluindo regras para responsividade em dispositivos móveis:
+
+```css
+/* Margens */
+body {
+  margin-top: 3cm;
+  margin-left: 3cm;
+  margin-right: 2cm;
+  margin-bottom: 2cm;
+  font-family: Arial, "Times New Roman", sans-serif;
+  font-size: 12pt; /* Tamanho da fonte padrão em pontos */
+  color: black;
+  line-height: 1.5; /* Espaçamento de 1,5 */
+  text-align: justify; /* Alinhamento justificado */
+}
+
+body .sumary {
+  margin-top: 3cm;
+  margin-left: 3cm;
+  margin-right: 2cm;
+  margin-bottom: 2cm;
+  font-family: Arial, "Times New Roman", sans-serif;
+  font-size: 12pt; /* Tamanho da fonte padrão em pontos */
+  color: black;
+  line-height: 1.5; /* Espaçamento de 1,5 */
+  text-align: justify; /* Alinhamento justificado */
+}
+
+/* Estilo para citações com mais de três linhas */
+blockquote {
+  font-size: 12pt;
+  line-height: 1.0; /* Espaçamento de 1,0 */
+  margin: 0 2cm;
+  padding-left: 1cm;
+  border-left: 3px solid #000;
+}
+
+/* Estilo para itálico (palavras ou expressões em outros idiomas) */
+.emphasis {
+  font-style: italic;
+}
+
+/* Paginação (NBR 14724) */
+@media print {
+  body {
+    counter-reset: page;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    text-align: right;
+    font-size: 10pt;
+    content: counter(page);
+  }
+}
+
+/* Sumário (NBR 6027) */
+#table-of-contents {
+  margin-top: 2cm;
+  text-align: left;
+  font-size: 12pt;
+}
+
+#table-of-contents h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5cm;
+}
+
+#table-of-contents ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+#table-of-contents ul li {
+  line-height: 1.5;
+}
+
+/* Referências (NBR 6023 e NBR 10520) */
+.references {
+  font-size: 12pt;
+  line-height: 1.5;
+  text-align: justify;
+  margin-top: 2cm;
+}
+
+.references h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5cm;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  body {
+    margin: 1.5cm;
+    font-size: 11pt; /* Ajusta o tamanho da fonte */
+  }
+
+  blockquote {
+    margin: 0 1cm;
+    padding-left: 0.5cm;
+  }
+
+  #table-of-contents,
+  .references {
+    margin-top: 1cm;
+  }
+}
+/*```
+
+### Explicação:
+1. **Margens**: Configuradas em `cm` para impressão e ajustadas em dispositivos móveis usando a media query.
+2. **Fonte**: Arial e Times New Roman como preferências padrão.
+3. **Itálico**: Aplicável com uma classe CSS `.emphasis` para flexibilidade.
+4. **Espaçamento**: `line-height` configurado para 1,5 no corpo do texto e 1,0 para citações longas.
+5. **Sumário e Referências**: Estilo específico com tamanhos e alinhamento apropriados.
+6. **Paginação**: Incluída para impressão, exibindo o número da página no rodapé.
+7. **Responsividade**: Margens e tamanhos de fonte ajustados em telas menores.
+
+Você pode incorporar esse código ao seu projeto e ajustá-lo conforme necessário para atender às suas necessidades.
+*/
